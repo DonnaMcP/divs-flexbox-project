@@ -69,7 +69,14 @@ video {
 /*
  * Allow only vertical resizing of textareas.
  */
-
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
 textarea {
     resize: vertical;
 }
@@ -90,51 +97,85 @@ textarea {
    ========================================================================== */
 
 html {
-    background-color: #6b2f4b;
+    background-color: rgb(53, 8, 66);
     height: 100%;
+    width: 100%;
 }
 
 body {
     font-family: "Playfair Display", sans-serif;
-    padding: 2em;
+    padding: 0 2em;
     font-size: 1em;
-    height: 100%;
+    color: rgb(149, 12, 190);
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
     /*add display:flex and set justify-content to space-between*/
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
-    font-weight: 400;
+    max-width: 1200px;
+}
+
+p span {
+    font-family: "Playfair Display", sans-serif;
+}
+
+header,
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 3em;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(238, 224, 241);
+    border-bottom: 1px solid rgb(149, 12, 190);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: 1.35em;
 }
 
 .div-1,
 .div-2,
 .div-3 {
     /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    color: rgb(238, 224, 241);
+    line-height: 2em;
+    font-size: 1.15em;
+    width: 30%;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    line-height: 2em;
-    font-size: 1em;
-    background-color: #c7739a;
-    height: 300px;
-    width: 30%;
-    border-top: 1px solid #f8c5dd;
 }
 
 .div-2 {
-    border-left: 1px solid #f8c5dd;
-    border-right: 1px solid #f8c5dd;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid rgb(149, 12, 190);
+    border-right: 1px solid rgb(149, 12, 190);
 }
-
-/***.div-2 h3,
-.div-3 h3 {
-    padding: 10px 30px;
-}***/
-
+footer {
+    border-top: 1px solid rgb(149, 12, 190);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -214,6 +255,25 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/***   @media all and (max-width: 768px) {
+    body {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-items {
+        flex-basis: 30%;
+        border-bottom: none;
+    }
+
+  #div-2 p {
+        border-left: 1px solid rgb(149, 12, 190);
+        border-right: 1px solid rgb(149, 12, 190);
+        padding: 0 40px;
+    }
+***/
 
 @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
