@@ -66,6 +66,7 @@ video {
  * Remove default fieldset styles.
  */
 
+<<<<<<< HEAD
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -74,6 +75,8 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+=======
+>>>>>>> e61d6cef8c1ed6456e68be14d263f68394f0d111
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -97,18 +100,28 @@ textarea {
    ========================================================================== */
 
 html {
+<<<<<<< HEAD
     background-color: rgb(53, 8, 66);
+=======
+    background-color: #6b2f4b;
+>>>>>>> e61d6cef8c1ed6456e68be14d263f68394f0d111
     height: 100%;
     width: 100%;
 }
 
 body {
     font-family: "Playfair Display", sans-serif;
+<<<<<<< HEAD
     padding: 0 2em;
     font-size: 1em;
     color: rgb(149, 12, 190);
     display: flex;
     justify-content: center;
+=======
+    padding: 2em;
+    font-size: 1em;
+    height: 100%;
+>>>>>>> e61d6cef8c1ed6456e68be14d263f68394f0d111
 }
 
 .wrapper {
@@ -116,6 +129,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+<<<<<<< HEAD
     max-width: 1200px;
 }
 
@@ -151,6 +165,10 @@ main {
 
 main p {
     font-size: 1.35em;
+=======
+    flex-wrap: wrap;
+    font-weight: 400;
+>>>>>>> e61d6cef8c1ed6456e68be14d263f68394f0d111
 }
 
 .div-1,
@@ -165,6 +183,7 @@ main p {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
 }
 
 .div-2 {
@@ -176,6 +195,27 @@ main p {
 footer {
     border-top: 1px solid rgb(149, 12, 190);
 }
+=======
+    color: #fff;
+    line-height: 2em;
+    font-size: 1em;
+    background-color: #c7739a;
+    height: 300px;
+    width: 30%;
+    border-top: 1px solid #f8c5dd;
+}
+
+.div-2 {
+    border-left: 1px solid #f8c5dd;
+    border-right: 1px solid #f8c5dd;
+}
+
+/***.div-2 h3,
+.div-3 h3 {
+    padding: 10px 30px;
+}***/
+
+>>>>>>> e61d6cef8c1ed6456e68be14d263f68394f0d111
 /* ==========================================================================
    Helper classes
    ========================================================================== */
